@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電影推薦</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>電影推薦</h1>
+        <div class="input-container">
+            <input type="text" id="movieInput" placeholder="輸入您喜愛的電影...">
+            <button onclick="getRecommendations()">獲取推薦</button>
+        </div>
+        <div id="recommendations"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
